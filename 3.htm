@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş bir sətirdə unikal (təkrarlanmayan) simvolların sayını tapan bir funksiya yaz.
+meselen: alabaş
+3 ("l", "b", "ş") -->
+    <script>
+        let count = 0
+        function chevir(a){
+            const show = a.split('')
+            for(let x = 0; x< show.length; x++){
+                for(let y = x+1; y< show.length; y++){
+                    if(show[x]!== show[y]) count++
+                }
+            }
+            console.log(count)
+        }
+        chevir('alabaş');
+    </script>
+</body>
+
+</html>

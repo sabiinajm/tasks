@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş tam ədədi tərkibindəki tək rəqəmlərin cəmini hesablayan bir funksiya yaz.
+İnput: 13572
+Output:   9 (1 + 3 + 5) -->
+    <script>
+        function chevir(a){
+            const arr = a.toString().split('').map(Number)
+            const filtered = arr.filter(i => i % 2)
+            console.log(filtered.reduce((acc, val) => acc+val,0))
+        }
+        chevir(13572);
+    </script>
+</body>
+
+</html>
