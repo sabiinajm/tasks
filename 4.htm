@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Verilmiş array-də təkrarlanan (dublikat) elementləri tapan bir funksiya yaz. 
+        Burada filter() və indexOf() metodlarından istifadə et. -->
+    <script>
+        let arr = ['alma', 'yemish', 'armud', 'alma', 'qarpiz', 'alma']
+        function chevir() {
+            console.log(arr.filter((item, index) => arr.indexOf(item) === index))
+        }
+        chevir(arr);
+    </script>
+</body>
+
+</html>

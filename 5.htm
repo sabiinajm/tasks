@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- verilmiş iki array-in kəsişən elementlərini tapan bir funksiya yaz. Kəsişmədə təkrarlanan elementlər olmasın.
+    input [4, 9, 5], [9, 4, 9, 8, 4]
+    out: [4, 9] -->
+    <script>
+        let arr1 = [4, 9, 5]
+        let arr2 = [9, 4, 9, 8, 4]
+
+        function chevir(arr1, arr2) {
+            let newArr = arr1.filter(item => arr2.includes(item))
+            console.log(newArr)
+        }
+
+        chevir(arr1, arr2);
+
+    </script>
+</body>
+
+</html>
